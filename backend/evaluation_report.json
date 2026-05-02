@@ -1,0 +1,474 @@
+{
+  "model": "AyuRithm GNN (rule-based, NetworkX)",
+  "dataset": "403 Goan foods · 40 pharmacological profiles",
+  "weights": {
+    "W_SAFETY": -3.0,
+    "W_DISEASE": -2.0,
+    "W_WELLNESS": 1.5,
+    "W_RITU": 0.5
+  },
+  "ground_truth": {
+    "total_cases": 46,
+    "correct": 45,
+    "accuracy": 0.9783,
+    "per_class": {
+      "Avoid": {
+        "TP": 25,
+        "FP": 0,
+        "FN": 1,
+        "TN": 20,
+        "precision": 1.0,
+        "recall": 0.9615,
+        "f1": 0.9804
+      },
+      "Moderate": {
+        "TP": 10,
+        "FP": 1,
+        "FN": 0,
+        "TN": 35,
+        "precision": 0.9091,
+        "recall": 1.0,
+        "f1": 0.9524
+      },
+      "Consume": {
+        "TP": 10,
+        "FP": 0,
+        "FN": 0,
+        "TN": 36,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    }
+  },
+  "synthetic_population": {
+    "patients": 1000,
+    "total_evaluations": 386625,
+    "class_distribution": {
+      "Consume": 157423,
+      "Moderate": 84986,
+      "Avoid": 144216
+    },
+    "avg_score_per_class": {
+      "Consume": 1.8095,
+      "Moderate": 0.1717,
+      "Avoid": -1.2399
+    }
+  },
+  "case_details": [
+    {
+      "idx": 1,
+      "description": "[A-K1] Spironolactone (RAAS drug) + Banana buns [Potassium] → Hyperkalemia risk",
+      "food_id": "FOOD_GOA_003",
+      "expected": "Avoid",
+      "predicted": "Avoid",
+      "score": -1.75,
+      "pass": true
+    },
+    {
+      "idx": 2,
+      "description": "[A-K2] Ramipril (RAAS drug) + Banana and wheat flour fritters / Goan banana pancakes [Potassium] → Hyperkalemia risk",
+      "food_id": "FOOD_GOA_054",
+      "expected": "Avoid",
+      "predicted": "Avoid",
+      "score": -0.7,
+      "pass": true
+    },
+    {
+      "idx": 3,
+      "description": "[A-K3] Telmisartan (RAAS drug) + Goan banana fudge [Potassium] → Hyperkalemia risk",
+      "food_id": "FOOD_GOA_067",
+      "expected": "Avoid",
+      "predicted": "Avoid",
+      "score": -2.95,
+      "pass": true
+    },
+    {
+      "idx": 4,
+      "description": "[A-K4] Spironolactone (RAAS drug) + Banana and rice flour fritters [Potassium] → Hyperkalemia risk",
+      "food_id": "FOOD_GOA_085",
+      "expected": "Avoid",
+      "predicted": "Avoid",
+      "score": -1.75,
+      "pass": true
+    },
+    {
+      "idx": 5,
+      "description": "[A-K5] Ramipril (RAAS drug) + Shallow-fried breadfruit slices [Potassium] → Hyperkalemia risk",
+      "food_id": "FOOD_GOA_107",
+      "expected": "Avoid",
+      "predicted": "Avoid",
+      "score": -2.95,
+      "pass": true
+    },
+    {
+      "idx": 6,
+      "description": "[A-K6] Telmisartan (RAAS drug) + Breadfruit coconut stir-fry [Potassium] → Hyperkalemia risk",
+      "food_id": "FOOD_GOA_108",
+      "expected": "Avoid",
+      "predicted": "Avoid",
+      "score": -2.95,
+      "pass": true
+    },
+    {
+      "idx": 7,
+      "description": "[A-S1] Atorvastatin (statin) + dyslipidemia condition + Thin, coconut-based potato or white pea curry",
+      "food_id": "FOOD_GOA_001",
+      "expected": "Avoid",
+      "predicted": "Avoid",
+      "score": -4.0,
+      "pass": true
+    },
+    {
+      "idx": 8,
+      "description": "[A-S2] Rosuvastatin (statin) + dyslipidemia condition + Mushroom samosa",
+      "food_id": "FOOD_GOA_002",
+      "expected": "Avoid",
+      "predicted": "Avoid",
+      "score": -4.75,
+      "pass": true
+    },
+    {
+      "idx": 9,
+      "description": "[A-S3] Atorvastatin (statin) + dyslipidemia condition + Sweet Poha in Coconut Milk",
+      "food_id": "FOOD_GOA_012",
+      "expected": "Avoid",
+      "predicted": "Avoid",
+      "score": -4.45,
+      "pass": true
+    },
+    {
+      "idx": 10,
+      "description": "[A-S4] Rosuvastatin (statin) + dyslipidemia condition + Mushed poha",
+      "food_id": "FOOD_GOA_019",
+      "expected": "Avoid",
+      "predicted": "Avoid",
+      "score": -2.25,
+      "pass": true
+    },
+    {
+      "idx": 11,
+      "description": "[A-C1] Nitroglycerin + heart disease + Thin, coconut-based potato or white pea curry → Cardiovascular conflict",
+      "food_id": "FOOD_GOA_001",
+      "expected": "Avoid",
+      "predicted": "Avoid",
+      "score": -3.45,
+      "pass": true
+    },
+    {
+      "idx": 12,
+      "description": "[A-C2] Metoprolol + heart disease + Mushroom samosa → Cardiovascular conflict",
+      "food_id": "FOOD_GOA_002",
+      "expected": "Avoid",
+      "predicted": "Avoid",
+      "score": -2.0,
+      "pass": true
+    },
+    {
+      "idx": 13,
+      "description": "[A-C3] Clopidogrel + heart disease + Sweet Poha in Coconut Milk → Cardiovascular conflict",
+      "food_id": "FOOD_GOA_012",
+      "expected": "Avoid",
+      "predicted": "Avoid",
+      "score": -2.75,
+      "pass": true
+    },
+    {
+      "idx": 14,
+      "description": "[A-C4] Ticagrelor + heart disease + Mushed poha → Cardiovascular conflict",
+      "food_id": "FOOD_GOA_019",
+      "expected": "Avoid",
+      "predicted": "Avoid",
+      "score": -4.45,
+      "pass": true
+    },
+    {
+      "idx": 15,
+      "description": "[A-D1] Hydrochlorothiazide + diabetes + Banana buns",
+      "food_id": "FOOD_GOA_003",
+      "expected": "Avoid",
+      "predicted": "Avoid",
+      "score": -4.25,
+      "pass": true
+    },
+    {
+      "idx": 16,
+      "description": "[A-D2] Hydrochlorothiazide + diabetes + Rice crepes",
+      "food_id": "FOOD_GOA_006",
+      "expected": "Avoid",
+      "predicted": "Avoid",
+      "score": -1.95,
+      "pass": true
+    },
+    {
+      "idx": 17,
+      "description": "[A-D3] Hydrochlorothiazide + diabetes + Savory semolina porridge",
+      "food_id": "FOOD_GOA_007",
+      "expected": "Avoid",
+      "predicted": "Avoid",
+      "score": -4.45,
+      "pass": true
+    },
+    {
+      "idx": 18,
+      "description": "[B-1.1] Diabetes + GERD + Goan Tomato-Onion Bhaji → dual disease penalty",
+      "food_id": "FOOD_GOA_004",
+      "expected": "Avoid",
+      "predicted": "Avoid",
+      "score": -6.75,
+      "pass": true
+    },
+    {
+      "idx": 19,
+      "description": "[B-1.2] Diabetes + GERD + Green chilli fritters / Chilli pakora → dual disease penalty",
+      "food_id": "FOOD_GOA_023",
+      "expected": "Avoid",
+      "predicted": "Avoid",
+      "score": -4.45,
+      "pass": true
+    },
+    {
+      "idx": 20,
+      "description": "[B-1.3] Diabetes + GERD + Jackfruit leaf steamed idli / Rice and lentil dumplings in leaves → dual disease penalty",
+      "food_id": "FOOD_GOA_039",
+      "expected": "Avoid",
+      "predicted": "Avoid",
+      "score": -4.45,
+      "pass": true
+    },
+    {
+      "idx": 21,
+      "description": "[B-2.1] Obesity + Dyslipidemia + Mushroom samosa → dual disease penalty",
+      "food_id": "FOOD_GOA_002",
+      "expected": "Avoid",
+      "predicted": "Avoid",
+      "score": -4.0,
+      "pass": true
+    },
+    {
+      "idx": 22,
+      "description": "[B-2.2] Obesity + Dyslipidemia + Sweet Poha in Coconut Milk → dual disease penalty",
+      "food_id": "FOOD_GOA_012",
+      "expected": "Avoid",
+      "predicted": "Avoid",
+      "score": -4.45,
+      "pass": true
+    },
+    {
+      "idx": 23,
+      "description": "[B-2.3] Obesity + Dyslipidemia + Jaggery Poha → dual disease penalty",
+      "food_id": "FOOD_GOA_017",
+      "expected": "Avoid",
+      "predicted": "Avoid",
+      "score": -2.45,
+      "pass": true
+    },
+    {
+      "idx": 24,
+      "description": "[B-3.1] IBS + Arthritis + White Peas stir fry → dual disease penalty",
+      "food_id": "FOOD_GOA_009",
+      "expected": "Avoid",
+      "predicted": "Avoid",
+      "score": -2.45,
+      "pass": true
+    },
+    {
+      "idx": 25,
+      "description": "[B-3.2] IBS + Arthritis + Black-eyed peas stir fry → dual disease penalty",
+      "food_id": "FOOD_GOA_010",
+      "expected": "Avoid",
+      "predicted": "Moderate",
+      "score": 0.0,
+      "pass": false
+    },
+    {
+      "idx": 26,
+      "description": "[B-3.3] IBS + Arthritis + Lima Beans Curry → dual disease penalty",
+      "food_id": "FOOD_GOA_021",
+      "expected": "Avoid",
+      "predicted": "Avoid",
+      "score": -2.75,
+      "pass": true
+    },
+    {
+      "idx": 27,
+      "description": "[C-1] Healthy Vata (Vasant Ritu) + Savory lentil and rice porridge / Goan Khichdi → Consume",
+      "food_id": "FOOD_GOA_030",
+      "expected": "Consume",
+      "predicted": "Consume",
+      "score": 2.3,
+      "pass": true
+    },
+    {
+      "idx": 28,
+      "description": "[C-2] Healthy Vata (Vasant Ritu) + Sprouted green gram coconut curry → Consume",
+      "food_id": "FOOD_GOA_120",
+      "expected": "Consume",
+      "predicted": "Consume",
+      "score": 2.3,
+      "pass": true
+    },
+    {
+      "idx": 29,
+      "description": "[C-3] Healthy Pitta (Grishma Ritu) + Savory lentil and rice porridge / Goan Khichdi → Consume",
+      "food_id": "FOOD_GOA_030",
+      "expected": "Consume",
+      "predicted": "Consume",
+      "score": 2.3,
+      "pass": true
+    },
+    {
+      "idx": 30,
+      "description": "[C-4] Healthy Pitta (Grishma Ritu) + Ridge gourd Stir-fry → Consume",
+      "food_id": "FOOD_GOA_101",
+      "expected": "Consume",
+      "predicted": "Consume",
+      "score": 2.3,
+      "pass": true
+    },
+    {
+      "idx": 31,
+      "description": "[C-5] Healthy Kapha (Hemant Ritu) + Savory lentil and rice porridge / Goan Khichdi → Consume",
+      "food_id": "FOOD_GOA_030",
+      "expected": "Consume",
+      "predicted": "Consume",
+      "score": 2.3,
+      "pass": true
+    },
+    {
+      "idx": 32,
+      "description": "[C-6] Healthy Kapha (Hemant Ritu) + Drumstick dry stir-fry → Consume",
+      "food_id": "FOOD_GOA_113",
+      "expected": "Consume",
+      "predicted": "Consume",
+      "score": 2.0,
+      "pass": true
+    },
+    {
+      "idx": 33,
+      "description": "[C-7] Healthy Vata (Shishir Ritu) + Savory lentil and rice porridge / Goan Khichdi → Consume",
+      "food_id": "FOOD_GOA_030",
+      "expected": "Consume",
+      "predicted": "Consume",
+      "score": 2.3,
+      "pass": true
+    },
+    {
+      "idx": 34,
+      "description": "[C-8] Healthy Vata (Shishir Ritu) + Finger millet and coconut milk porridge → Consume",
+      "food_id": "FOOD_GOA_105",
+      "expected": "Consume",
+      "predicted": "Consume",
+      "score": 2.0,
+      "pass": true
+    },
+    {
+      "idx": 35,
+      "description": "[C-9] Healthy Pitta (Varsha Ritu) + Savory lentil and rice porridge / Goan Khichdi → Consume",
+      "food_id": "FOOD_GOA_030",
+      "expected": "Consume",
+      "predicted": "Consume",
+      "score": 2.3,
+      "pass": true
+    },
+    {
+      "idx": 36,
+      "description": "[C-10] Healthy Pitta (Varsha Ritu) + Ridge gourd Stir-fry → Consume",
+      "food_id": "FOOD_GOA_101",
+      "expected": "Consume",
+      "predicted": "Consume",
+      "score": 2.3,
+      "pass": true
+    },
+    {
+      "idx": 37,
+      "description": "[D-1] Healthy Vata (Grishma Ritu) + neutral food Red amaranth stir-fry → Moderate",
+      "food_id": "FOOD_GOA_109",
+      "expected": "Moderate",
+      "predicted": "Moderate",
+      "score": 0.8,
+      "pass": true
+    },
+    {
+      "idx": 38,
+      "description": "[D-2] Healthy Vata (Grishma Ritu) + neutral food White amaranth stir-fry → Moderate",
+      "food_id": "FOOD_GOA_128",
+      "expected": "Moderate",
+      "predicted": "Moderate",
+      "score": 0.8,
+      "pass": true
+    },
+    {
+      "idx": 39,
+      "description": "[D-3] Healthy Pitta (Hemant Ritu) + neutral food Fenugreek and coconut rice porridge → Moderate",
+      "food_id": "FOOD_GOA_110",
+      "expected": "Moderate",
+      "predicted": "Moderate",
+      "score": 0.8,
+      "pass": true
+    },
+    {
+      "idx": 40,
+      "description": "[D-4] Healthy Pitta (Hemant Ritu) + neutral food Pearl spot → Moderate",
+      "food_id": "FOOD_GOA_375",
+      "expected": "Moderate",
+      "predicted": "Moderate",
+      "score": 0.55,
+      "pass": true
+    },
+    {
+      "idx": 41,
+      "description": "[D-5] Healthy Kapha (Vasant Ritu) + neutral food Goan tempered dal / Yellow lentil soup → Moderate",
+      "food_id": "FOOD_GOA_123",
+      "expected": "Moderate",
+      "predicted": "Moderate",
+      "score": 0.8,
+      "pass": true
+    },
+    {
+      "idx": 42,
+      "description": "[D-6] Healthy Vata (Varsha Ritu) + neutral food Red amaranth stir-fry → Moderate",
+      "food_id": "FOOD_GOA_109",
+      "expected": "Moderate",
+      "predicted": "Moderate",
+      "score": 0.55,
+      "pass": true
+    },
+    {
+      "idx": 43,
+      "description": "[D-7] Healthy Vata (Varsha Ritu) + neutral food Drumstick dry stir-fry → Moderate",
+      "food_id": "FOOD_GOA_113",
+      "expected": "Moderate",
+      "predicted": "Moderate",
+      "score": 0.8,
+      "pass": true
+    },
+    {
+      "idx": 44,
+      "description": "[D-8] Healthy Vata (Varsha Ritu) + neutral food White amaranth stir-fry → Moderate",
+      "food_id": "FOOD_GOA_128",
+      "expected": "Moderate",
+      "predicted": "Moderate",
+      "score": 0.55,
+      "pass": true
+    },
+    {
+      "idx": 45,
+      "description": "[D-9] Healthy Pitta (Shishir Ritu) + neutral food Fenugreek and coconut rice porridge → Moderate",
+      "food_id": "FOOD_GOA_110",
+      "expected": "Moderate",
+      "predicted": "Moderate",
+      "score": 0.8,
+      "pass": true
+    },
+    {
+      "idx": 46,
+      "description": "[D-10] Healthy Pitta (Shishir Ritu) + neutral food Pearl spot → Moderate",
+      "food_id": "FOOD_GOA_375",
+      "expected": "Moderate",
+      "predicted": "Moderate",
+      "score": 0.55,
+      "pass": true
+    }
+  ]
+}

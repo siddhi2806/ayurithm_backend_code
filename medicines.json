@@ -1,0 +1,1804 @@
+[
+    {
+  "node_id": "MED_HCTZ",
+  "drug_category": "Cardiovascular",
+  "drug_class": "Thiazide Diuretic",
+  "intensity": "Standard",
+  
+  "identifiers": {
+    "generic_names": [
+      "Hydrochlorothiazide"
+    ],
+    "brand_names": [
+      "Microzide",
+      "HydroDIURIL",
+      "Esidrix",
+      "Oretic",
+      "Amturnide",
+      "Aquazide"
+    ]
+  },
+
+  "indications": [
+    "Hypertension",
+    "Edema"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [
+      {
+        "interacting_biochemical": "Licorice_Root",
+        "interaction_effect": "Can cause severe hypokalemia (low potassium) when combined with thiazides",
+        "weight_penalty": -3.0
+      }
+    ],
+
+    "disease_aggravating_profiles": [
+      {
+        "interacting_macronutrient": "High_Sodium",
+        "interaction_effect": "Promotes fluid retention, counteracting the diuretic effect on blood pressure",
+        "weight_penalty": -2.0
+      }
+    ]
+  },
+  
+  "metadata": {
+    "clinical_note": "Diuretic often used as initial therapy for elderly patients."
+  }
+},
+{
+  "node_id": "MED_CHLORTHALIDONE",
+  "drug_category": "Cardiovascular",
+  "drug_class": "Thiazide-like Diuretic",
+  "intensity": "Standard",
+  
+  "identifiers": {
+    "generic_names": [
+      "Chlorthalidone"
+    ],
+    "brand_names": [
+      "Hygroton",
+      "Thalitone",
+      "Tenoretic",
+      "Clorpres",
+      "Regroton"
+    ]
+  },
+
+  "indications": [
+    "Hypertension"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [
+      {
+        "interacting_biochemical": "Licorice_Root",
+        "interaction_effect": "Can cause severe hypokalemia (low potassium) when combined with thiazide-like diuretics",
+        "weight_penalty": -3.0
+      }
+    ],
+
+    "disease_aggravating_profiles": [
+      {
+        "interacting_macronutrient": "High_Sodium",
+        "interaction_effect": "Promotes fluid retention, counteracting the blood-pressure-lowering effect",
+        "weight_penalty": -2.0
+      }
+    ]
+  },
+  
+  "metadata": {
+    "clinical_note": "Thiazide-like diuretic used for high blood pressure."
+  }
+},
+{
+  "node_id": "MED_AMLODIPINE",
+  "drug_category": "Cardiovascular",
+  "drug_class": "Calcium Channel Blocker",
+  "intensity": "Standard",
+  
+  "identifiers": {
+    "generic_names": [
+      "Amlodipine"
+    ],
+    "brand_names": [
+      "Norvasc",
+      "Stamlo",
+      "Amlong",
+      "Lotrel",
+      "Amlobenz",
+      "Twynsta"
+    ]
+  },
+
+  "indications": [
+    "Hypertension"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [
+      {
+        "interacting_biochemical": "Furanocoumarins",
+        "interaction_effect": "Mildly inhibits CYP3A4 metabolism, potentially increasing drug concentration in the blood",
+        "weight_penalty": -1.5
+      }
+    ],
+
+    "disease_aggravating_profiles": [
+      {
+        "interacting_macronutrient": "High_Sodium",
+        "interaction_effect": "Promotes fluid retention, counteracting the blood-pressure-lowering effect",
+        "weight_penalty": -2.0
+      }
+    ]
+  },
+  
+  "metadata": {
+    "clinical_note": "Long-acting dihydropyridine type CCB; preferred initial agent for patients over 60."
+  }
+},
+{
+  "node_id": "MED_RAMIPRIL",
+  "drug_category": "Cardiovascular",
+  "drug_class": "ACE Inhibitor",
+  "intensity": "Standard",
+  
+  "identifiers": {
+    "generic_names": [
+      "Ramipril"
+    ],
+    "brand_names": [
+      "Cardace",
+      "Ramipres",
+      "Ramistar",
+      "Ramcor",
+      "Hopace"
+    ]
+  },
+
+  "indications": [
+    "Hypertension"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [
+      {
+        "interacting_biochemical": "High_Potassium",
+        "interaction_effect": "Increases risk of severe hyperkalemia (dangerously high blood potassium) due to reduced potassium excretion",
+        "weight_penalty": -3.0
+      }
+    ],
+
+    "disease_aggravating_profiles": [
+      {
+        "interacting_macronutrient": "High_Sodium",
+        "interaction_effect": "Promotes fluid retention, counteracting the blood-pressure-lowering effect",
+        "weight_penalty": -2.0
+      }
+    ]
+  },
+  
+  "metadata": {
+    "clinical_note": "Renin-angiotensin system blocker; preferred for patients under 60."
+  }
+},
+{
+  "node_id": "MED_TELMISARTAN",
+  "drug_category": "Cardiovascular",
+  "drug_class": "Angiotensin II Receptor Blocker",
+  "intensity": "Standard",
+  
+  "identifiers": {
+    "generic_names": [
+      "Telmisartan"
+    ],
+    "brand_names": [
+      "Micardis",
+      "Telma",
+      "Telmikind",
+      "Sartel",
+      "Tellzy"
+    ]
+  },
+
+  "indications": [
+    "Hypertension"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [
+      {
+        "interacting_biochemical": "High_Potassium",
+        "interaction_effect": "Increases risk of hyperkalemia (high blood potassium) as ARBs reduce potassium excretion",
+        "weight_penalty": -3.0
+      }
+    ],
+
+    "disease_aggravating_profiles": [
+      {
+        "interacting_macronutrient": "High_Sodium",
+        "interaction_effect": "Promotes fluid retention, counteracting the blood-pressure-lowering effect",
+        "weight_penalty": -2.0
+      }
+    ]
+  },
+  
+  "metadata": {
+    "clinical_note": "Renin-angiotensin system blocker; preferred for patients under 60."
+  }
+},
+{
+  "node_id": "MED_METOPROLOL",
+  "drug_category": "Cardiovascular",
+  "drug_class": "Beta-Blocker",
+  "intensity": "Standard",
+  
+  "identifiers": {
+    "generic_names": [
+      "Metoprolol"
+    ],
+    "brand_names": [
+      "Lopressor",
+      "Met XL",
+      "Starpress XL",
+      "Metolar XR",
+      "Toprol-XL"
+    ]
+  },
+
+  "indications": [
+    "Cardiovascular Disease"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [
+      {
+        "interacting_biochemical": "High_Alcohol",
+        "interaction_effect": "Enhances the blood-pressure-lowering effect, increasing the risk of severe dizziness and fainting",
+        "weight_penalty": -3.0
+      }
+    ],
+
+    "disease_aggravating_profiles": [
+      {
+        "interacting_macronutrient": "High_Caffeine",
+        "interaction_effect": "Stimulates heart rate and blood pressure, directly counteracting the beta-blocker's mechanism of action",
+        "weight_penalty": -2.0
+      },
+      {
+        "interacting_macronutrient": "High_Sodium",
+        "interaction_effect": "Promotes fluid retention, adding physical stress to the cardiovascular system",
+        "weight_penalty": -2.0
+      }
+    ]
+  },
+  
+  "metadata": {
+    "clinical_note": "Used for established heart disease; not first-line for hypertension alone unless co-existing conditions exist."
+  }
+},
+{
+  "node_id": "MED_ATORVASTATIN",
+  "drug_category": "Cardio-Metabolic",
+  "drug_class": "Statin",
+  "intensity": "High-Intensity",
+  
+  "identifiers": {
+    "generic_names": [
+      "Atorvastatin"
+    ],
+    "brand_names": [
+      "Lipitor",
+      "Atorva",
+      "Aztor",
+      "Storvas",
+      "Tonact"
+    ]
+  },
+
+  "indications": [
+    "Dyslipidemia"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [
+      {
+        "interacting_biochemical": "Furanocoumarins",
+        "interaction_effect": "Inhibits CYP3A4 metabolism, significantly increasing the risk of statin toxicity and muscle damage (myopathy)",
+        "weight_penalty": -3.0
+      },
+      {
+        "interacting_biochemical": "High_Alcohol",
+        "interaction_effect": "Increases the risk of hepatotoxicity (liver damage) when combined with statins",
+        "weight_penalty": -3.0
+      }
+    ],
+
+    "disease_aggravating_profiles": [
+      {
+        "interacting_macronutrient": "Saturated_Fat",
+        "interaction_effect": "Raises LDL cholesterol, directly counteracting the lipid-lowering efficacy of the Statin",
+        "weight_penalty": -2.0
+      }
+    ]
+  },
+  
+  "metadata": {
+    "clinical_note": "Undisputed cornerstone of therapy; available in high and moderate intensity formulations."
+  }
+},
+{
+  "node_id": "MED_ROSUVASTATIN",
+  "drug_category": "Cardio-Metabolic",
+  "drug_class": "Statin",
+  "intensity": "High-Intensity",
+  
+  "identifiers": {
+    "generic_names": [
+      "Rosuvastatin"
+    ],
+    "brand_names": [
+      "Crestor",
+      "Rosuvas",
+      "Rozucor",
+      "Roseday",
+      "Novastat"
+    ]
+  },
+
+  "indications": [
+    "Dyslipidemia"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [
+      {
+        "interacting_biochemical": "High_Alcohol",
+        "interaction_effect": "Increases the risk of hepatotoxicity (liver damage) and myopathy when combined with statins",
+        "weight_penalty": -3.0
+      }
+    ],
+
+    "disease_aggravating_profiles": [
+      {
+        "interacting_macronutrient": "Saturated_Fat",
+        "interaction_effect": "Raises LDL cholesterol, directly counteracting the lipid-lowering efficacy of the Statin",
+        "weight_penalty": -2.0
+      }
+    ]
+  },
+  
+  "metadata": {
+    "clinical_note": "High-intensity statin capable of LDL reduction ≥50%."
+  }
+},
+{
+  "node_id": "MED_EZETIMIBE",
+  "drug_category": "Cardio-Metabolic",
+  "drug_class": "Cholesterol Absorption Inhibitor",
+  "intensity": "Standard",
+  
+  "identifiers": {
+    "generic_names": [
+      "Ezetimibe"
+    ],
+    "brand_names": [
+      "Zetia",
+      "Ezedoc",
+      "Ezentia",
+      "Ezetrol"
+    ]
+  },
+
+  "indications": [
+    "Dyslipidemia"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [],
+    
+    "disease_aggravating_profiles": [
+      {
+        "interacting_macronutrient": "Saturated_Fat",
+        "interaction_effect": "Raises circulating cholesterol levels, directly counteracting the drug's mechanism of blocking intestinal cholesterol absorption",
+        "weight_penalty": -2.0
+      }
+    ]
+  },
+  
+  "metadata": {
+    "clinical_note": "Inhibits absorption of cholesterol."
+  }
+},
+{
+  "node_id": "MED_FENOFIBRATE",
+  "drug_category": "Cardio-Metabolic",
+  "drug_class": "Fibrate",
+  "intensity": "Standard",
+  
+  "identifiers": {
+    "generic_names": [
+      "Fenofibrate"
+    ],
+    "brand_names": [
+      "TriCor",
+      "Lipofen",
+      "Lipikind-F",
+      "Fibator",
+      "Antara"
+    ]
+  },
+
+  "indications": [
+    "Dyslipidemia"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [
+      {
+        "interacting_biochemical": "High_Alcohol",
+        "interaction_effect": "Significantly raises triglyceride levels, directly counteracting the drug's primary therapeutic goal, and increases liver stress",
+        "weight_penalty": -3.0
+      }
+    ],
+
+    "disease_aggravating_profiles": [
+      {
+        "interacting_macronutrient": "Saturated_Fat",
+        "interaction_effect": "Raises circulating lipid and triglyceride levels, counteracting the lipid-lowering efficacy of the drug",
+        "weight_penalty": -2.0
+      }
+    ]
+  },
+  
+  "metadata": {
+    "clinical_note": "Used for lipid management."
+  }
+},
+{
+  "node_id": "MED_NITROGLYCERIN",
+  "drug_category": "Cardiovascular",
+  "drug_class": "Nitrate",
+  "intensity": "Standard",
+  
+  "identifiers": {
+    "generic_names": [
+      "Nitroglycerin"
+    ],
+    "brand_names": [
+      "Nitrocontin",
+      "Angispan TR"
+    ]
+  },
+
+  "indications": [
+    "Angina"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [
+      {
+        "interacting_biochemical": "High_Alcohol",
+        "interaction_effect": "Causes extreme additive vasodilation, leading to severe and potentially fatal drops in blood pressure (hypotension)",
+        "weight_penalty": -3.0
+      }
+    ],
+
+    "disease_aggravating_profiles": [
+      {
+        "interacting_macronutrient": "High_Sodium",
+        "interaction_effect": "Increases fluid retention and cardiac workload, triggering the angina the drug is meant to relieve",
+        "weight_penalty": -2.0
+      }
+    ]
+  },
+  
+  "metadata": {
+    "clinical_note": "Vasodilator used specifically for Angina."
+  }
+},
+{
+  "node_id": "MED_CLOPIDOGREL",
+  "drug_category": "Cardiovascular",
+  "drug_class": "P2Y12 Inhibitor",
+  "intensity": "Standard",
+  
+  "identifiers": {
+    "generic_names": [
+      "Clopidogrel"
+    ],
+    "brand_names": [
+      "Clopilet",
+      "Ceruvin",
+      "Clopitab",
+      "Deplatt"
+    ]
+  },
+
+  "indications": [
+    "Cardiovascular Disease",
+    "Stroke Prevention"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [
+      {
+        "interacting_biochemical": "High_Alcohol",
+        "interaction_effect": "Significantly increases the risk of major gastrointestinal bleeding when combined with antiplatelet therapy",
+        "weight_penalty": -3.0
+      }
+    ],
+
+    "disease_aggravating_profiles": [
+      {
+        "interacting_macronutrient": "Saturated_Fat",
+        "interaction_effect": "Promotes progressive atherosclerosis and clot formation, actively fighting the drug's preventative cardiovascular goals",
+        "weight_penalty": -2.0
+      }
+    ]
+  },
+  
+  "metadata": {
+    "clinical_note": "Used for established heart disease and non-cardioembolic stroke prevention."
+  }
+},
+{
+  "node_id": "MED_TICAGRELOR",
+  "drug_category": "Cardiovascular",
+  "drug_class": "P2Y12 Inhibitor",
+  "intensity": "High-Efficacy",
+  
+  "identifiers": {
+    "generic_names": [
+      "Ticagrelor"
+    ],
+    "brand_names": [
+      "Brilinta",
+      "Ticagrel",
+      "Ticaflo",
+      "Axcer"
+    ]
+  },
+
+  "indications": [
+    "Cardiovascular Disease"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [
+      {
+        "interacting_biochemical": "Furanocoumarins",
+        "interaction_effect": "Inhibits CYP3A4 metabolism, causing drug accumulation and a severely increased risk of major bleeding events",
+        "weight_penalty": -3.0
+      },
+      {
+        "interacting_biochemical": "High_Alcohol",
+        "interaction_effect": "Increases the risk of major gastrointestinal bleeding",
+        "weight_penalty": -3.0
+      }
+    ],
+
+    "disease_aggravating_profiles": [
+      {
+        "interacting_macronutrient": "Saturated_Fat",
+        "interaction_effect": "Promotes progressive atherosclerosis, counteracting the drug's preventative goals",
+        "weight_penalty": -2.0
+      }
+    ]
+  },
+  
+  "metadata": {
+    "clinical_note": "Superior to clopidogrel in reducing cardiovascular death/MI/stroke."
+  }
+},
+{
+  "node_id": "MED_SPIRONOLACTONE",
+  "drug_category": "Cardiovascular",
+  "drug_class": "Mineralocorticoid Receptor Antagonist",
+  "intensity": "Standard",
+  
+  "identifiers": {
+    "generic_names": [
+      "Spironolactone"
+    ],
+    "brand_names": [
+      "Aldactone",
+      "Spiromist",
+      "Aldon"
+    ]
+  },
+
+  "indications": [
+    "Cardiovascular Disease",
+    "Heart Failure"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [
+      {
+        "interacting_biochemical": "High_Potassium",
+        "interaction_effect": "Directly inhibits potassium excretion, creating a high risk for life-threatening hyperkalemia",
+        "weight_penalty": -3.0
+      }
+    ],
+
+    "disease_aggravating_profiles": [
+      {
+        "interacting_macronutrient": "High_Sodium",
+        "interaction_effect": "Promotes fluid retention, counteracting the drug's diuretic effects and stressing the heart",
+        "weight_penalty": -2.0
+      }
+    ]
+  },
+  
+  "metadata": {
+    "clinical_note": "Used in heart disease management."
+  }
+},
+{
+  "node_id": "MED_DAPAGLIFLOZIN",
+  "drug_category": "Cardio-Metabolic",
+  "drug_class": "SGLT2 Inhibitor",
+  "intensity": "Standard",
+  
+  "identifiers": {
+    "generic_names": [
+      "Dapagliflozin"
+    ],
+    "brand_names": [
+      "Forxiga",
+      "Dapaglyn",
+      "Gledepa",
+      "Oxra"
+    ]
+  },
+
+  "indications": [
+    "Cardiovascular Disease",
+    "Type 2 Diabetes"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [
+      {
+        "interacting_biochemical": "High_Alcohol",
+        "interaction_effect": "Alters liver metabolism and hydration status, increasing the risk of diabetic ketoacidosis (DKA)",
+        "weight_penalty": -3.0
+      }
+    ],
+
+    "disease_aggravating_profiles": [
+      {
+        "interacting_macronutrient": "Refined_Carbohydrates",
+        "interaction_effect": "Causes rapid spikes in blood glucose, overwhelming the kidney's ability to excrete sugar via the SGLT2 pathway",
+        "weight_penalty": -2.0
+      }
+    ]
+  },
+  
+  "metadata": {
+    "clinical_note": "Used for heart disease and Type 2 Diabetes."
+  }
+},
+{
+  "node_id": "MED_INSULIN_GLARGINE",
+  "drug_category": "Endocrine",
+  "drug_class": "Basal Insulin",
+  "intensity": "High-Efficacy",
+  
+  "identifiers": {
+    "generic_names": [
+      "Insulin Glargine"
+    ],
+    "brand_names": [
+      "Lantus",
+      "Basalog",
+      "Toujeo",
+      "Semglee",
+      "Glaritus"
+    ]
+  },
+
+  "indications": [
+    "Type 1 Diabetes",
+    "Type 2 Diabetes"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [
+      {
+        "interacting_biochemical": "High_Alcohol",
+        "interaction_effect": "Blocks hepatic gluconeogenesis (liver glucose production), leading to a high risk of severe and prolonged hypoglycemia",
+        "weight_penalty": -3.0
+      }
+    ],
+
+    "disease_aggravating_profiles": [
+      {
+        "interacting_macronutrient": "Refined_Carbohydrates",
+        "interaction_effect": "Creates high glucose loads that outpace the steady, slow-release mechanism of basal insulin, causing hyperglycemia",
+        "weight_penalty": -2.0
+      }
+    ]
+  },
+  
+  "metadata": {
+    "clinical_note": "Background insulin used in basal-bolus regimens."
+  }
+},
+{
+  "node_id": "MED_INSULIN_ASPART",
+  "drug_category": "Endocrine",
+  "drug_class": "Bolus (Prandial) Insulin",
+  "intensity": "High-Efficacy",
+  
+  "identifiers": {
+    "generic_names": [
+      "Insulin Aspart"
+    ],
+    "brand_names": [
+      "Novolog",
+      "NovoRapid",
+      "Fiasp",
+      "Trurapi"
+    ]
+  },
+
+  "indications": [
+    "Type 1 Diabetes",
+    "Type 2 Diabetes"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [
+      {
+        "interacting_biochemical": "High_Alcohol",
+        "interaction_effect": "Blocks hepatic gluconeogenesis, creating a high risk of rapid, severe hypoglycemia if taken without sufficient dietary carbohydrates",
+        "weight_penalty": -3.0
+      }
+    ],
+
+    "disease_aggravating_profiles": [
+      {
+        "interacting_macronutrient": "Refined_Carbohydrates",
+        "interaction_effect": "Causes severe postprandial glucose spikes that can outpace the insulin's action profile or require dangerously high bolus doses",
+        "weight_penalty": -2.0
+      }
+    ]
+  },
+  
+  "metadata": {
+    "clinical_note": "Meal-time insulin."
+  }
+},
+{
+  "node_id": "MED_METFORMIN",
+  "drug_category": "Endocrine",
+  "drug_class": "Biguanide",
+  "intensity": "Standard",
+  
+  "identifiers": {
+    "generic_names": [
+      "Metformin"
+    ],
+    "brand_names": [
+      "Glycomet",
+      "Glyciphage",
+      "Riomet",
+      "Glucovance",
+      "Janumet"
+    ]
+  },
+
+  "indications": [
+    "Type 2 Diabetes"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [
+      {
+        "interacting_biochemical": "High_Alcohol",
+        "interaction_effect": "Increases the risk of lactic acidosis, a rare but life-threatening metabolic complication",
+        "weight_penalty": -3.0
+      }
+    ],
+
+    "disease_aggravating_profiles": [
+      {
+        "interacting_macronutrient": "Refined_Carbohydrates",
+        "interaction_effect": "Floods the system with glucose, directly counteracting the drug's mechanism of lowering hepatic glucose output",
+        "weight_penalty": -2.0
+      }
+    ]
+  },
+  
+  "metadata": {
+    "clinical_note": "Standard oral medication for Type 2 Diabetes."
+  }
+},
+{
+  "node_id": "MED_GLIMEPIRIDE",
+  "drug_category": "Endocrine",
+  "drug_class": "Sulfonylurea",
+  "intensity": "Standard",
+  
+  "identifiers": {
+    "generic_names": [
+      "Glimepiride"
+    ],
+    "brand_names": [
+      "Amaryl",
+      "Glimestar",
+      "Zoryl",
+      "Azulix",
+      "Glimy"
+    ]
+  },
+
+  "indications": [
+    "Type 2 Diabetes"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [
+      {
+        "interacting_biochemical": "High_Alcohol",
+        "interaction_effect": "Significantly amplifies the risk of severe, prolonged hypoglycemia by blocking the liver's compensatory glucose release",
+        "weight_penalty": -3.0
+      }
+    ],
+
+    "disease_aggravating_profiles": [
+      {
+        "interacting_macronutrient": "Refined_Carbohydrates",
+        "interaction_effect": "Counteracts the baseline glycemic control goals, forcing the pancreas to work harder and increasing beta-cell burnout",
+        "weight_penalty": -2.0
+      }
+    ]
+  },
+  
+  "metadata": {
+    "clinical_note": "Stimulates insulin release."
+  }
+},
+{
+  "node_id": "MED_EMPAGLIFLOZIN",
+  "drug_category": "Cardio-Metabolic",
+  "drug_class": "SGLT-2 Inhibitor",
+  "intensity": "Standard",
+  
+  "identifiers": {
+    "generic_names": [
+      "Empagliflozin"
+    ],
+    "brand_names": [
+      "Jardiance",
+      "Gibtulio",
+      "Empaone",
+      "Glyxambi"
+    ]
+  },
+
+  "indications": [
+    "Type 2 Diabetes"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [
+      {
+        "interacting_biochemical": "High_Alcohol",
+        "interaction_effect": "Alters liver metabolism and hydration status, increasing the risk of euglycemic diabetic ketoacidosis (DKA)",
+        "weight_penalty": -3.0
+      }
+    ],
+
+    "disease_aggravating_profiles": [
+      {
+        "interacting_macronutrient": "Refined_Carbohydrates",
+        "interaction_effect": "Causes rapid spikes in blood glucose, overwhelming the kidney's ability to excrete sugar via the SGLT2 pathway",
+        "weight_penalty": -2.0
+      }
+    ]
+  },
+  
+  "metadata": {
+    "clinical_note": "Sodium-Glucose Cotransporter-2 Inhibitor."
+  }
+},
+{
+  "node_id": "MED_SEMAGLUTIDE",
+  "drug_category": "Cardio-Metabolic",
+  "drug_class": "GLP-1 Receptor Agonist",
+  "intensity": "High-Efficacy",
+  
+  "identifiers": {
+    "generic_names": [
+      "Semaglutide"
+    ],
+    "brand_names": [
+      "Ozempic",
+      "Rybelsus",
+      "Wegovy"
+    ]
+  },
+
+  "indications": [
+    "Type 2 Diabetes",
+    "Obesity"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [
+      {
+        "interacting_biochemical": "High_Alcohol",
+        "interaction_effect": "Increases the risk of hypoglycemia and exacerbates potential pancreatic inflammation (pancreatitis)",
+        "weight_penalty": -3.0
+      }
+    ],
+
+    "disease_aggravating_profiles": [
+      {
+        "interacting_macronutrient": "Saturated_Fat",
+        "interaction_effect": "Severely worsens gastrointestinal side effects (nausea, delayed gastric emptying) and opposes weight loss goals",
+        "weight_penalty": -2.0
+      },
+      {
+        "interacting_macronutrient": "Refined_Carbohydrates",
+        "interaction_effect": "Directly counteracts the drug's glycemic control and incretin-mimetic mechanisms",
+        "weight_penalty": -2.0
+      }
+    ]
+  },
+  
+  "metadata": {
+    "clinical_note": "Incretin mimetic used for diabetes and obesity management."
+  }
+},
+{
+  "node_id": "MED_SITAGLIPTIN",
+  "drug_category": "Endocrine",
+  "drug_class": "DPP-4 Inhibitor",
+  "intensity": "Standard",
+  
+  "identifiers": {
+    "generic_names": [
+      "Sitagliptin"
+    ],
+    "brand_names": [
+      "Januvia",
+      "Istavel",
+      "Sitara",
+      "Zituvio"
+    ]
+  },
+
+  "indications": [
+    "Type 2 Diabetes"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [
+      {
+        "interacting_biochemical": "High_Alcohol",
+        "interaction_effect": "Increases the risk of pancreatic stress and potential hypoglycemia when combined with other antidiabetic agents",
+        "weight_penalty": -2.5
+      }
+    ],
+
+    "disease_aggravating_profiles": [
+      {
+        "interacting_macronutrient": "Refined_Carbohydrates",
+        "interaction_effect": "Overwhelms the incretin-enhancing mechanism, leading to uncontrolled postprandial glucose levels",
+        "weight_penalty": -2.0
+      }
+    ]
+  },
+  
+  "metadata": {
+    "clinical_note": "Dipeptidyl Peptidase 4 Inhibitor."
+  }
+},
+{
+  "node_id": "MED_PIOGLITAZONE",
+  "drug_category": "Endocrine",
+  "drug_class": "Thiazolidinediones",
+  "intensity": "Standard",
+  
+  "identifiers": {
+    "generic_names": [
+      "Pioglitazone"
+    ],
+    "brand_names": [
+      "Actos",
+      "Pioz",
+      "Pioglar",
+      "Pio"
+    ]
+  },
+
+  "indications": [
+    "Type 2 Diabetes"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [
+      {
+        "interacting_biochemical": "High_Alcohol",
+        "interaction_effect": "Increases stress on the liver and raises the risk of hypoglycemia",
+        "weight_penalty": -2.5
+      }
+    ],
+
+    "disease_aggravating_profiles": [
+      {
+        "interacting_macronutrient": "High_Sodium",
+        "interaction_effect": "Exacerbates the drug's known side effect of fluid retention, significantly increasing the risk of edema and heart failure",
+        "weight_penalty": -3.0
+      },
+      {
+        "interacting_macronutrient": "Refined_Carbohydrates",
+        "interaction_effect": "Counteracts the insulin-sensitizing effects by flooding the system with excess glucose",
+        "weight_penalty": -2.0
+      }
+    ]
+  },
+  
+  "metadata": {
+    "clinical_note": "Insulin sensitizer."
+  }
+},
+{
+  "node_id": "MED_ACARBOSE",
+  "drug_category": "Endocrine",
+  "drug_class": "Alpha-glucosidase Inhibitor",
+  "intensity": "Standard",
+  
+  "identifiers": {
+    "generic_names": [
+      "Acarbose"
+    ],
+    "brand_names": [
+      "Glucobay",
+      "Acarb",
+      "Askar"
+    ]
+  },
+
+  "indications": [
+    "Type 2 Diabetes"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [
+      {
+        "interacting_biochemical": "High_Alcohol",
+        "interaction_effect": "Increases the risk of hypoglycemia when used in combination with other anti-diabetic agents",
+        "weight_penalty": -2.0
+      }
+    ],
+
+    "disease_aggravating_profiles": [
+      {
+        "interacting_macronutrient": "Refined_Carbohydrates",
+        "interaction_effect": "Causes severe gastrointestinal side effects (flatulence, diarrhea) due to colonic fermentation of undigested carbohydrates",
+        "weight_penalty": -3.0
+      }
+    ]
+  },
+  
+  "metadata": {
+    "clinical_note": "Delays carbohydrate absorption. Note: If hypoglycemia occurs, it must be treated with pure glucose (dextrose), not table sugar (sucrose), as the drug blocks sucrose breakdown."
+  }
+},
+{
+  "node_id": "MED_LEVOTHYROXINE",
+  "drug_category": "Endocrine",
+  "drug_class": "Thyroid Hormone Replacement",
+  "intensity": "Standard",
+  
+  "identifiers": {
+    "generic_names": [
+      "Levothyroxine"
+    ],
+    "brand_names": [
+      "Thyronorm",
+      "Eltroxin",
+      "Thyrox",
+      "Lethyrox",
+      "Thyrofit"
+    ]
+  },
+
+  "indications": [
+    "Hypothyroidism"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [
+      {
+        "interacting_biochemical": "Calcium_Iron_Supplements",
+        "interaction_effect": "Physically binds to levothyroxine in the gastrointestinal tract, severely reducing drug absorption",
+        "weight_penalty": -3.0
+      },
+      {
+        "interacting_biochemical": "High_Soy_Fiber",
+        "interaction_effect": "Interferes with intestinal absorption, requiring higher doses to achieve euthyroid state",
+        "weight_penalty": -2.5
+      }
+    ],
+
+    "disease_aggravating_profiles": []
+  },
+  
+  "metadata": {
+    "clinical_note": "Taken orally once daily; absorption highly affected by food, calcium, and iron."
+  }
+},
+{
+  "node_id": "MED_CARBIMAZOLE",
+  "drug_category": "Endocrine",
+  "drug_class": "Anti-Thyroid Drug",
+  "intensity": "Standard",
+  
+  "identifiers": {
+    "generic_names": [
+      "Carbimazole"
+    ],
+    "brand_names": [
+      "Neo-Mercazole",
+      "Thyrocap",
+      "Anti-Thyrox",
+      "Cabimaze"
+    ]
+  },
+
+  "indications": [
+    "Hyperthyroidism"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [
+      {
+        "interacting_biochemical": "High_Iodine",
+        "interaction_effect": "Provides excess substrate for thyroid hormone synthesis, directly counteracting the drug's inhibitory mechanism",
+        "weight_penalty": -3.0
+      }
+    ],
+
+    "disease_aggravating_profiles": []
+  },
+  
+  "metadata": {
+    "clinical_note": "Pro-drug that converts to Methimazole; most common ATD in India."
+  }
+},
+{
+  "node_id": "MED_COCP_CYPROTERONE",
+  "drug_category": "Endocrine",
+  "drug_class": "Combined Oral Contraceptive Pill",
+  "intensity": "Standard",
+  
+  "identifiers": {
+    "generic_names": [
+      "Ethinylestradiol",
+      "Cyproterone Acetate"
+    ],
+    "brand_names": [
+      "Diane-35",
+      "Ginette-35",
+      "Krimson-35"
+    ]
+  },
+
+  "indications": [
+    "PCOS",
+    "Hyperandrogenism"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [
+      {
+        "interacting_biochemical": "Furanocoumarins",
+        "interaction_effect": "Inhibits CYP3A4 metabolism, potentially increasing circulating estrogen levels and side effect risks",
+        "weight_penalty": -1.5
+      }
+    ],
+
+    "disease_aggravating_profiles": [
+      {
+        "interacting_macronutrient": "Refined_Carbohydrates",
+        "interaction_effect": "Worsens underlying insulin resistance, which drives further ovarian androgen production, counteracting the drug's anti-androgenic goals",
+        "weight_penalty": -2.0
+      }
+    ]
+  },
+  
+  "metadata": {
+    "clinical_note": "First-line for hyperandrogenic features in women not seeking pregnancy."
+  }
+},
+{
+  "node_id": "MED_LETROZOLE",
+  "drug_category": "Endocrine",
+  "drug_class": "Aromatase Inhibitor",
+  "intensity": "Standard",
+  
+  "identifiers": {
+    "generic_names": [
+      "Letrozole"
+    ],
+    "brand_names": [
+      "Letroz",
+      "Femara",
+      "Letoval"
+    ]
+  },
+
+  "indications": [
+    "PCOS",
+    "Infertility"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [],
+
+    "disease_aggravating_profiles": [
+      {
+        "interacting_macronutrient": "Refined_Carbohydrates",
+        "interaction_effect": "Worsens underlying insulin resistance, which increases ovarian androgen production and directly opposes the ovulation-induction goals",
+        "weight_penalty": -2.0
+      }
+    ]
+  },
+  
+  "metadata": {
+    "clinical_note": "First-line treatment for ovulation induction."
+  }
+},
+{
+  "node_id": "MED_ORLISTAT",
+  "drug_category": "Gastrointestinal",
+  "drug_class": "Lipase Inhibitor",
+  "intensity": "Standard",
+  
+  "identifiers": {
+    "generic_names": [
+      "Orlistat"
+    ],
+    "brand_names": [
+      "Lipocut",
+      "Obelit",
+      "Orlica",
+      "Reeshape",
+      "Vyfat"
+    ]
+  },
+
+  "indications": [
+    "Obesity"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [],
+
+    "disease_aggravating_profiles": [
+      {
+        "interacting_macronutrient": "High_Fat",
+        "interaction_effect": "Triggers severe gastrointestinal side effects (steatorrhea, urgent bowel movements) due to the drug's mechanism of blocking fat absorption",
+        "weight_penalty": -3.0
+      },
+      {
+        "interacting_macronutrient": "Refined_Carbohydrates",
+        "interaction_effect": "Replaces fat calories with sugar calories, entirely negating the weight-loss benefits of the medication",
+        "weight_penalty": -2.0
+      }
+    ]
+  },
+  
+  "metadata": {
+    "clinical_note": "Inhibits dietary fat absorption."
+  }
+},
+{
+  "node_id": "MED_ESOMEPRAZOLE",
+  "drug_category": "Gastrointestinal",
+  "drug_class": "Proton Pump Inhibitor",
+  "intensity": "High-Efficacy",
+  
+  "identifiers": {
+    "generic_names": [
+      "Esomeprazole"
+    ],
+    "brand_names": [
+      "Nexium",
+      "Nexpro",
+      "Sompraz",
+      "Esomac",
+      "Raciper"
+    ]
+  },
+
+  "indications": [
+    "GERD"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [
+      {
+        "interacting_biochemical": "High_Alcohol",
+        "interaction_effect": "Relaxes the lower esophageal sphincter (LES) and heavily irritates the gastric mucosa, directly undermining the drug's healing environment",
+        "weight_penalty": -3.0
+      }
+    ],
+
+    "disease_aggravating_profiles": [
+      {
+        "interacting_macronutrient": "Spicy_Acidic_Foods",
+        "interaction_effect": "Directly irritates the esophageal lining and stimulates excess acid production",
+        "weight_penalty": -2.0
+      },
+      {
+        "interacting_macronutrient": "High_Fat",
+        "interaction_effect": "Delays gastric emptying and relaxes the LES, promoting severe acid reflux",
+        "weight_penalty": -2.0
+      }
+    ]
+  },
+  
+  "metadata": {
+    "clinical_note": "Potent acid suppressant; mainstay of GERD treatment."
+  }
+},
+{
+  "node_id": "MED_RABEPRAZOLE",
+  "drug_category": "Gastrointestinal",
+  "drug_class": "Proton Pump Inhibitor",
+  "intensity": "Standard",
+  
+  "identifiers": {
+    "generic_names": [
+      "Rabeprazole"
+    ],
+    "brand_names": [
+      "Aciphex",
+      "Razo",
+      "Rabekind",
+      "Rabium",
+      "Cyra"
+    ]
+  },
+
+  "indications": [
+    "GERD"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [
+      {
+        "interacting_biochemical": "High_Alcohol",
+        "interaction_effect": "Relaxes the lower esophageal sphincter (LES) and heavily irritates the gastric mucosa, directly undermining the drug's healing environment",
+        "weight_penalty": -3.0
+      }
+    ],
+
+    "disease_aggravating_profiles": [
+      {
+        "interacting_macronutrient": "Spicy_Acidic_Foods",
+        "interaction_effect": "Directly irritates the esophageal lining and stimulates excess acid production",
+        "weight_penalty": -2.0
+      },
+      {
+        "interacting_macronutrient": "High_Fat",
+        "interaction_effect": "Delays gastric emptying and relaxes the LES, promoting severe acid reflux",
+        "weight_penalty": -2.0
+      }
+    ]
+  },
+  
+  "metadata": {
+    "clinical_note": "Acid suppressant for reflux symptoms."
+  }
+},
+{
+  "node_id": "MED_DOMPERIDONE",
+  "drug_category": "Gastrointestinal",
+  "drug_class": "Prokinetic",
+  "intensity": "Standard",
+  
+  "identifiers": {
+    "generic_names": [
+      "Domperidone"
+    ],
+    "brand_names": [
+      "Domstal",
+      "Motilium-M",
+      "Vomistop",
+      "Pantocid-D"
+    ]
+  },
+
+  "indications": [
+    "GERD",
+    "Nausea"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [
+      {
+        "interacting_biochemical": "High_Alcohol",
+        "interaction_effect": "Worsens gastric irritation and can compound the mild central nervous system side effects of the drug",
+        "weight_penalty": -2.0
+      }
+    ],
+
+    "disease_aggravating_profiles": [
+      {
+        "interacting_macronutrient": "High_Fat",
+        "interaction_effect": "Significantly delays gastric emptying, directly opposing the prokinetic (motility-enhancing) mechanism of the drug",
+        "weight_penalty": -2.5
+      }
+    ]
+  },
+  
+  "metadata": {
+    "clinical_note": "Often combined with PPIs (e.g., Pantocid-D)."
+  }
+},
+{
+  "node_id": "MED_SUCRALFATE",
+  "drug_category": "Gastrointestinal",
+  "drug_class": "Mucosal Protectant",
+  "intensity": "Standard",
+  
+  "identifiers": {
+    "generic_names": [
+      "Sucralfate"
+    ],
+    "brand_names": [
+      "Carafate",
+      "Sucrafil",
+      "Pepsigard",
+      "Sucramal"
+    ]
+  },
+
+  "indications": [
+    "GERD",
+    "Peptic Ulcers"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [],
+
+    "disease_aggravating_profiles": [
+      {
+        "interacting_macronutrient": "Spicy_Acidic_Foods",
+        "interaction_effect": "Exacerbates the underlying ulceration and tissue damage that the drug is attempting to shield",
+        "weight_penalty": -2.0
+      }
+    ]
+  },
+  
+  "metadata": {
+    "clinical_note": "Coats the stomach lining. Must be taken on an empty stomach to adhere properly to the mucosa."
+  }
+},
+{
+  "node_id": "MED_MEBEVERINE",
+  "drug_category": "Gastrointestinal",
+  "drug_class": "Antispasmodic",
+  "intensity": "Standard",
+  
+  "identifiers": {
+    "generic_names": [
+      "Mebeverine"
+    ],
+    "brand_names": [
+      "Colospa",
+      "Morease",
+      "Mebiz",
+      "Matiz"
+    ]
+  },
+
+  "indications": [
+    "Irritable Bowel Syndrome"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [],
+
+    "disease_aggravating_profiles": [
+      {
+        "interacting_macronutrient": "High_Caffeine",
+        "interaction_effect": "Stimulates colonic motility and induces gut spasms, directly counteracting the smooth muscle relaxation of the drug",
+        "weight_penalty": -2.0
+      },
+      {
+        "interacting_macronutrient": "High_FODMAPs",
+        "interaction_effect": "Increases intestinal gas and distension, triggering the IBS cramping the drug is meant to relieve",
+        "weight_penalty": -2.0
+      }
+    ]
+  },
+  
+  "metadata": {
+    "clinical_note": "Used for abdominal pain and cramping."
+  }
+},
+{
+  "node_id": "MED_RIFAXIMIN",
+  "drug_category": "Gastrointestinal",
+  "drug_class": "Gut-specific Antibiotic",
+  "intensity": "Standard",
+  
+  "identifiers": {
+    "generic_names": [
+      "Rifaximin"
+    ],
+    "brand_names": [
+      "Rifagut",
+      "Sibofix",
+      "Rcifax",
+      "Zimigut"
+    ]
+  },
+
+  "indications": [
+    "IBS-D",
+    "SIBO"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [
+      {
+        "interacting_biochemical": "High_Alcohol",
+        "interaction_effect": "Worsens intestinal permeability and diarrhea, actively fighting the drug's goal of restoring gut homeostasis",
+        "weight_penalty": -2.0
+      }
+    ],
+
+    "disease_aggravating_profiles": [
+      {
+        "interacting_macronutrient": "Fermentable_Carbohydrates",
+        "interaction_effect": "Feeds the pathogenic or overgrown bacteria in the small intestine, forcing the antibiotic to compete against rapid bacterial replication",
+        "weight_penalty": -2.5
+      }
+    ]
+  },
+  
+  "metadata": {
+    "clinical_note": "Targets gut microbiota; minimally absorbed."
+  }
+},
+{
+  "node_id": "MED_POLYETHYLENE_GLYCOL",
+  "drug_category": "Gastrointestinal",
+  "drug_class": "Osmotic Laxative",
+  "intensity": "Standard",
+  
+  "identifiers": {
+    "generic_names": [
+      "Polyethylene Glycol"
+    ],
+    "brand_names": [
+      "Pegmove",
+      "Muout",
+      "Miralax",
+      "Softovac Liquid"
+    ]
+  },
+
+  "indications": [
+    "IBS-C",
+    "Constipation"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [],
+
+    "disease_aggravating_profiles": [
+      {
+        "interacting_macronutrient": "Low_Fluid_Intake",
+        "interaction_effect": "Deprives the osmotic agent of the water necessary to soften stool, rendering the medication ineffective and worsening constipation",
+        "weight_penalty": -2.5
+      },
+      {
+        "interacting_macronutrient": "Low_Fiber",
+        "interaction_effect": "Fails to provide the necessary stool bulk for proper colonic motility, compounding the underlying IBS-C",
+        "weight_penalty": -2.0
+      }
+    ]
+  },
+  
+  "metadata": {
+    "clinical_note": "Effective and safe for increasing stool frequency."
+  }
+},
+{
+  "node_id": "MED_AMITRIPTYLINE",
+  "drug_category": "Neurological",
+  "drug_class": "Tricyclic Antidepressant",
+  "intensity": "Low-Dose",
+  
+  "identifiers": {
+    "generic_names": [
+      "Amitriptyline"
+    ],
+    "brand_names": [
+      "Tryptomer",
+      "Amitone",
+      "Sarotex"
+    ]
+  },
+
+  "indications": [
+    "Irritable Bowel Syndrome",
+    "Chronic Pain"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [
+      {
+        "interacting_biochemical": "High_Alcohol",
+        "interaction_effect": "Causes severe additive central nervous system depression, heavy sedation, and increases the risk of cardiac arrhythmias",
+        "weight_penalty": -3.0
+      }
+    ],
+
+    "disease_aggravating_profiles": [
+      {
+        "interacting_macronutrient": "High_FODMAPs",
+        "interaction_effect": "Triggers massive gas production and visceral hypersensitivity, directly fighting the drug's pain-dampening goals",
+        "weight_penalty": -2.0
+      }
+    ]
+  },
+  
+  "metadata": {
+    "clinical_note": "Low-dose neuromodulator for global IBS pain management."
+  }
+},
+{
+  "node_id": "MED_SULFASALAZINE",
+  "drug_category": "Gastrointestinal",
+  "drug_class": "Aminosalicylate",
+  "intensity": "Standard",
+  
+  "identifiers": {
+    "generic_names": [
+      "Sulfasalazine"
+    ],
+    "brand_names": [
+      "Salazopyrin",
+      "Sazo",
+      "Iwata",
+      "Sulfazine"
+    ]
+  },
+
+  "indications": [
+    "Inflammatory Bowel Disease"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [
+      {
+        "interacting_biochemical": "High_Alcohol",
+        "interaction_effect": "Increases mucosal irritation in the gut and raises the risk of hepatotoxicity (liver damage)",
+        "weight_penalty": -2.5
+      }
+    ],
+
+    "disease_aggravating_profiles": [
+      {
+        "interacting_macronutrient": "Ultra_Processed_Foods",
+        "interaction_effect": "Promotes severe systemic and mucosal inflammation, directly counteracting the drug's anti-inflammatory mechanism",
+        "weight_penalty": -3.0
+      },
+      {
+        "interacting_macronutrient": "Refined_Carbohydrates",
+        "interaction_effect": "Alters gut microbiota toward a pro-inflammatory state, exacerbating IBD flare-ups",
+        "weight_penalty": -2.0
+      }
+    ]
+  },
+  
+  "metadata": {
+    "clinical_note": "Anti-inflammatory used for Inflammatory Bowel Disease. Note: Can inhibit folic acid absorption, requiring supplementation."
+  }
+},
+{
+  "node_id": "MED_BUDESONIDE",
+  "drug_category": "Gastrointestinal",
+  "drug_class": "Corticosteroid",
+  "intensity": "Controlled-Release",
+  
+  "identifiers": {
+    "generic_names": [
+      "Budesonide"
+    ],
+    "brand_names": [
+      "Budenofalk",
+      "Budez CR",
+      "Budenase",
+      "Cortiment"
+    ]
+  },
+
+  "indications": [
+    "Inflammatory Bowel Disease"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [
+      {
+        "interacting_biochemical": "Furanocoumarins",
+        "interaction_effect": "Inhibits CYP3A4 metabolism, severely increasing systemic steroid absorption and the risk of widespread corticosteroid side effects",
+        "weight_penalty": -3.0
+      }
+    ],
+
+    "disease_aggravating_profiles": [
+      {
+        "interacting_macronutrient": "Ultra_Processed_Foods",
+        "interaction_effect": "Drives severe mucosal inflammation, directly opposing the localized anti-inflammatory action of the steroid",
+        "weight_penalty": -3.0
+      }
+    ]
+  },
+  
+  "metadata": {
+    "clinical_note": "Controlled release steroid for IBD."
+  }
+},
+{
+  "node_id": "MED_SAROGLITAZAR",
+  "drug_category": "Cardio-Metabolic",
+  "drug_class": "Dual PPAR Agonist",
+  "intensity": "Standard",
+  
+  "identifiers": {
+    "generic_names": [
+      "Saroglitazar"
+    ],
+    "brand_names": [
+      "Lipaglyn",
+      "Bilypsa",
+      "LinVAS",
+      "Vorxar"
+    ]
+  },
+
+  "indications": [
+    "Non-Alcoholic Fatty Liver Disease"
+  ],
+
+  "gnn_conflict_rules": {
+    "severe_drug_food_interactions": [
+      {
+        "interacting_biochemical": "High_Alcohol",
+        "interaction_effect": "Induces direct hepatotoxicity and accelerates liver fat accumulation, entirely negating the therapeutic goals for NAFLD",
+        "weight_penalty": -3.0
+      }
+    ],
+
+    "disease_aggravating_profiles": [
+      {
+        "interacting_macronutrient": "High_Fructose",
+        "interaction_effect": "Drives rapid de novo lipogenesis (new fat creation) in the liver, actively fighting the drug's mechanism of clearing hepatic fat",
+        "weight_penalty": -3.0
+      },
+      {
+        "interacting_macronutrient": "Saturated_Fat",
+        "interaction_effect": "Worsens underlying insulin resistance and hepatic lipotoxicity",
+        "weight_penalty": -2.0
+      }
+    ]
+  },
+  
+  "metadata": {
+    "clinical_note": "Used for Non-Alcoholic Fatty Liver Disease."
+  }
+}
+]
