@@ -1,9 +1,0 @@
-fastapi
-uvicorn[standard]
-scikit-learn
-numpy
-pydantic
-networkx
-
-# Start command (run from anywhere — --app-dir handles the path):
-# python -m uvicorn prakriti_model:app --app-dir "C:\Users\HP\Documents\BE_Project\sem8_final_proj\ayurithm\backend" --host 0.0.0.0 --port 8000 --reload
